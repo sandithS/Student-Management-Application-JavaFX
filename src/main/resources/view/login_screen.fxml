@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="491.0" prefWidth="800.0" style="-fx-background-color: #2894d1;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginScreenController">
+   <children>
+      <TextField fx:id="txtUserName" layoutX="488.0" layoutY="187.0" prefHeight="26.0" prefWidth="255.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></TextField>
+      <PasswordField fx:id="txtPassword" layoutX="488.0" layoutY="269.0" prefHeight="26.0" prefWidth="255.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></PasswordField>
+      <Button fx:id="btnLogin" layoutX="582.0" layoutY="357.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="34.0" prefWidth="67.0" style="-fx-background-color: #f44336;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Bloom threshold="0.93" />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></Button>
+      <Label contentDisplay="CENTER" layoutX="551.0" layoutY="62.0" prefHeight="54.0" prefWidth="129.0" text="Welcome" textAlignment="JUSTIFY" textFill="WHITE">
+         <font>
+            <Font name="Microsoft Sans Serif" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="491.0" layoutY="159.0" text="Username" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="488.0" layoutY="242.0" text="Password" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="-2.0" layoutY="-3.0" prefHeight="500.0" prefWidth="424.0" style="-fx-background-color: #f2fbff;" />
+      <ImageView fitHeight="331.0" fitWidth="396.0" layoutX="26.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image_Nero_AI_Image_Upscaler_Photo_Face%20(2).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
